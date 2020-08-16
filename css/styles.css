@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,800&display=swap');
+
+
+.navbar{
+	overflow: hidden;
+	float: right; 
+
+}
+body{
+	font-family: "Raleway", Arial, serif;
+}
+
+.navbar a{
+	color:teal;
+	padding:2rem;
+	text-align: center;	
+	display: inline-block;
+	text-decoration: none;
+}
+
+.navbar a:hover{
+	background-color: #ffffff;
+	color: teal;
+	border-radius: 80px;
+}
+
+.navbar a.active{
+	background-color: teal;
+	color: #ffffff;
+	border-radius: 80px;
+}
+.container-nav{
+	position: relative;
+	width: auto;
+}
+
+/* .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-top: -6px;
+}*/
+
+.section{
+	padding: 4rem;
+	text-align: center;
+}
+
+.work-img{
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+	min-height: 700px;
+	object-fit: cover;
+}
+
+
+.columns{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner
+{	
+	position: relative;
+	color:#ffffff;
+	padding:3rem;
+	min-height: 500px;
+	background-image: url(../images/hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+
+}
+
+.banner h1
+{
+	text-align: left;
+	padding: 1rem;
+	margin-top: 10rem;
+}
+
+.banner p
+{
+	text-align: left;
+	padding: 2rem;
+	margin-top: 2rem;
+	color: white;
+}
+
+.profile{
+	max-width: 100%;
+	height: auto;
+	border-radius: 200px;
+	padding: 2rem;
+}
+
+	
+.button.button-new,
+button.button-new,
+input[type="submit"].button-new,
+input[type="reset"].button-new,
+input[type="button"].button-new 
+{
+	  color: #FFF;
+	  background-color: #19e3dc;
+	  border-color: #19e3dc; }
+	.button.button-new:hover,
+	button.button-new:hover,
+	input[type="submit"].button-new:hover,
+	input[type="reset"].button-new:hover,
+	input[type="button"].button-new:hover,
+	.button.button-new:focus,
+	button.button-new:focus,
+	input[type="submit"].button-new:focus,
+	input[type="reset"].button-new:focus,
+	input[type="button"].button-new:focus {
+	  color: #FFF;
+	  background-color: #129692;
+	  border-color: #129692; 
+	  margin-top: 1rem;
+}
+
+.about h2,p{
+	color: black;
+}
+
+/*<!-------MEDIA QUERIES-------->*/
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
+.work-img{
+	min-height: 300px;
+	object-fit: cover;
+}
+.work .three{
+	margin-bottom: 2.5rem;
+}
+
+.about p{
+	text-align: left;
+	margin: 0 auto;
+}
+.about .button{
+	margin-top: 2rem;
+}
+
